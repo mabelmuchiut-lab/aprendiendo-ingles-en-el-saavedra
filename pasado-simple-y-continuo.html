@@ -36,19 +36,17 @@
                 <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Grammar Review 🍩</span>
                 <h2 class="text-2xl font-bold mt-1 mb-3 text-gray-900">Past Simple & Past Continuous in Springfield</h2>
                 
-                <!-- EXPLICACIÓN BREVE -->
                 <div class="space-y-2 mb-6">
                     <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-200">
                         <span class="font-bold text-gray-800 block mb-1">💡 ¡Recordemos la regla!</span>
                         <p class="text-xs text-gray-600 leading-relaxed">
-                            Usamos el <strong>Past Continuous (was/were + -ing)</strong> para la acción larga que estaba pasando, y el <strong>Past Simple (-ed o irregular)</strong> para la acción corta que la interrumpió. ¡Mirá los ejemplos de la ficha!
+                            Usamos el <strong>Past Continuous (was/were + -ing)</strong> para la acción larga que estaba pasando, y el <strong>Past Simple (-ed o irregular)</strong> para la acción corta que la interrumpió.
                         </p>
                     </div>
                 </div>
 
-                <p class="text-gray-600 mb-4 font-bold border-t pt-4 border-gray-100">✏️ Springfield Challenges (Complete the sentences):</p>
+                <p class="text-gray-600 mb-4 font-bold border-t pt-4 border-gray-100">✏️ Springfield Challenges (Select the correct option):</p>
                 
-                <!-- FORMULARIO CON EJERCICIOS DE LA FICHA -->
                 <form action="https://formsubmit.co/mabel.muchiut@gmail.com" method="POST" class="space-y-6">
                     
                     <!-- DATOS -->
@@ -69,45 +67,107 @@
                         </div>
                     </div>
 
-                    <input type="hidden" name="_subject" value="Entrega: Ficha Simpsons Pasado - 5to A">
+                    <input type="hidden" name="_subject" value="Entrega Ficha Simpsons Desplegable - 5to A">
                     <input type="hidden" name="_captcha" value="false">
 
-                    <!-- PREGUNTAS ADAPTADAS DE EJERCICIO 2 -->
-                    <div class="space-y-5">
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">
-                                1. "I __________________ (have) a shower when somebody __________________ (ring)."
-                            </label>
-                            <input type="text" name="Q1_shower_ring" placeholder="Ej: was having / rang" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
+                    <!-- PREGUNTAS CON OPCIONES DESPLEGABLES -->
+                    <div class="space-y-6">
+                        
+                        <!-- PREGUNTA 1 -->
+                        <div class="bg-gray-50/50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-sm font-semibold text-gray-800 mb-3">1. "I (have) a shower when somebody (ring)."</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <select name="Q1_Part_1" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'have'</option>
+                                    <option value="had">had</option>
+                                    <option value="was having">was having</option>
+                                    <option value="were having">were having</option>
+                                </select>
+                                <select name="Q1_Part_2" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'ring'</option>
+                                    <option value="ringed">ringed</option>
+                                    <option value="was ringing">was ringing</option>
+                                    <option value="rang">rang</option>
+                                </select>
+                            </div>
                         </div>
 
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">
-                                2. "While the children __________________ (play) in the garden, it __________________ (start) to rain."
-                            </label>
-                            <input type="text" name="Q2_children_rain" placeholder="Ej: were playing / started" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
+                        <!-- PREGUNTA 2 -->
+                        <div class="bg-gray-50/50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-sm font-semibold text-gray-800 mb-3">2. "While the children (play) in the garden, it (start) to rain."</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <select name="Q2_Part_1" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'play'</option>
+                                    <option value="played">played</option>
+                                    <option value="was playing">was playing</option>
+                                    <option value="were playing">were playing</option>
+                                </select>
+                                <select name="Q2_Part_2" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'start'</option>
+                                    <option value="started">started</option>
+                                    <option value="was starting">was starting</option>
+                                    <option value="starts">starts</option>
+                                </select>
+                            </div>
                         </div>
 
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">
-                                3. "Doris __________________ (cook) when Mr. Chalmers __________________ (come)."
-                            </label>
-                            <input type="text" name="Q3_doris_chalmers" placeholder="Ej: was cooking / came" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
+                        <!-- PREGUNTA 3 -->
+                        <div class="bg-gray-50/50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-sm font-semibold text-gray-800 mb-3">3. "Doris (cook) when Mr. Chalmers (come)."</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <select name="Q3_Part_1" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'cook'</option>
+                                    <option value="cooked">cooked</option>
+                                    <option value="was cooking">was cooking</option>
+                                    <option value="were cooking">were cooking</option>
+                                </select>
+                                <select name="Q3_Part_2" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'come'</option>
+                                    <option value="comed">comed</option>
+                                    <option value="came">came</option>
+                                    <option value="was coming">was coming</option>
+                                </select>
+                            </div>
                         </div>
 
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">
-                                4. "We __________________ (listen) to music while our parents __________________ (watch) TV."
-                            </label>
-                            <input type="text" name="Q4_music_tv" placeholder="Ej: were listening / were watching" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
+                        <!-- PREGUNTA 4 -->
+                        <div class="bg-gray-50/50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-sm font-semibold text-gray-800 mb-3">4. "We (listen) to music while our parents (watch) TV."</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <select name="Q4_Part_1" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'listen'</option>
+                                    <option value="listened">listened</option>
+                                    <option value="was listening">was listening</option>
+                                    <option value="were listening">were listening</option>
+                                </select>
+                                <select name="Q4_Part_2" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'watch'</option>
+                                    <option value="watched">watched</option>
+                                    <option value="was watching">was watching</option>
+                                    <option value="were watching">were watching</option>
+                                </select>
+                            </div>
                         </div>
 
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">
-                                5. "The kids in the class __________________ (shout) when the teacher __________________ (enter) the classroom."
-                            </label>
-                            <input type="text" name="Q5_kids_teacher" placeholder="Ej: were shouting / entered" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
+                        <!-- PREGUNTA 5 -->
+                        <div class="bg-gray-50/50 p-4 rounded-xl border border-gray-100">
+                            <p class="text-sm font-semibold text-gray-800 mb-3">5. "The kids in the class (shout) when the teacher (enter) the classroom."</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <select name="Q5_Part_1" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'shout'</option>
+                                    <option value="shouted">shouted</option>
+                                    <option value="was shouting">was shouting</option>
+                                    <option value="were shouting">were shouting</option>
+                                </select>
+                                <select name="Q5_Part_2" required class="p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                                    <option value="" disabled selected>Seleccioná la opción para 'enter'</option>
+                                    <option value="entered">entered</option>
+                                    <option value="was entering">was entering</option>
+                                    <option value="enterrand">enterand</option>
+                                </select>
+                            </div>
                         </div>
+
                     </div>
 
                     <!-- BOTON DE ENVIO -->
