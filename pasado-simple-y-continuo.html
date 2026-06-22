@@ -30,26 +30,28 @@
             </div>
         </aside>
 
+        <!-- CONTENIDO PRINCIPAL -->
         <section class="md:col-span-2 space-y-6">
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                 <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Grammar Review 🍩</span>
                 <h2 class="text-2xl font-bold mt-1 mb-3 text-gray-900">Past Simple & Past Continuous in Springfield</h2>
                 
-                <p class="text-gray-600 mb-4 leading-relaxed font-semibold">Repasemos las estructuras del pasado:</p>
+                <!-- EXPLICACIÓN BREVE -->
                 <div class="space-y-2 mb-6">
-                    <div class="p-3 bg-emerald-100 rounded-xl border border-emerald-200 flex flex-col gap-1">
-                        <span class="font-bold text-gray-800">📌 Was / Were (Pasado del verbo To Be)</span>
-                        <span class="text-sm italic text-gray-600 font-medium">Homer <strong>was</strong> tired yesterday. / Bart and Milhouse <strong>were</strong> at school.</span>
-                    </div>
-                    <div class="p-3 bg-emerald-100 rounded-xl border border-emerald-200 flex flex-col gap-1">
-                        <span class="font-bold text-gray-800">🎬 Past Continuous (Acciones en progreso en el pasado)</span>
-                        <span class="text-sm italic text-gray-600 font-medium">Marge <strong>was cooking</strong> while Homer <strong>was watching</strong> TV.</span>
+                    <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-200">
+                        <span class="font-bold text-gray-800 block mb-1">💡 ¡Recordemos la regla!</span>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Usamos el <strong>Past Continuous (was/were + -ing)</strong> para la acción larga que estaba pasando, y el <strong>Past Simple (-ed o irregular)</strong> para la acción corta que la interrumpió. ¡Mirá los ejemplos de la ficha!
+                        </p>
                     </div>
                 </div>
 
-                <p class="text-gray-600 mb-4 leading-relaxed font-semibold border-t pt-4 border-gray-100">✏️ Let's Practice!:</p>
+                <p class="text-gray-600 mb-4 font-bold border-t pt-4 border-gray-100">✏️ Springfield Challenges (Complete the sentences):</p>
                 
+                <!-- FORMULARIO CON EJERCICIOS DE LA FICHA -->
                 <form action="https://formsubmit.co/mabel.muchiut@gmail.com" method="POST" class="space-y-6">
+                    
+                    <!-- DATOS -->
                     <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 grid grid-cols-1 sm:grid-cols-3 gap-4">
                         <div>
                             <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Nombre</label>
@@ -67,34 +69,50 @@
                         </div>
                     </div>
 
-                    <input type="hidden" name="_subject" value="Nueva entrega: Tarea de Pasado - 5to A">
+                    <input type="hidden" name="_subject" value="Entrega: Ficha Simpsons Pasado - 5to A">
                     <input type="hidden" name="_captcha" value="false">
 
-                    <div class="space-y-4">
+                    <!-- PREGUNTAS ADAPTADAS DE EJERCICIO 2 -->
+                    <div class="space-y-5">
                         <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">1. Complete with WAS or WERE: "Yesterday, Homer ______ sleeping at work."</label>
-                            <input type="text" name="Q1_Was_Were" placeholder="Your answer..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <label class="block text-sm font-semibold text-gray-800 mb-1">
+                                1. "I __________________ (have) a shower when somebody __________________ (ring)."
+                            </label>
+                            <input type="text" name="Q1_shower_ring" placeholder="Ej: was having / rang" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
                         </div>
+
                         <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">2. Complete with WAS or WERE: "Bart and Lisa ______ playing in the garden."</label>
-                            <input type="text" name="Q2_Was_Were_Plural" placeholder="Your answer..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <label class="block text-sm font-semibold text-gray-800 mb-1">
+                                2. "While the children __________________ (play) in the garden, it __________________ (start) to rain."
+                            </label>
+                            <input type="text" name="Q2_children_rain" placeholder="Ej: were playing / started" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
                         </div>
+
                         <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">3. Put the verb in Past Continuous: "While Marge was cleaning, Maggie ______ (drink) her milk."</label>
-                            <input type="text" name="Q3_Past_Continuous" placeholder="Your answer..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <label class="block text-sm font-semibold text-gray-800 mb-1">
+                                3. "Doris __________________ (cook) when Mr. Chalmers __________________ (come)."
+                            </label>
+                            <input type="text" name="Q3_doris_chalmers" placeholder="Ej: was cooking / came" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
                         </div>
+
                         <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">4. Turn into Negative: "Homer and Barney were studying."</label>
-                            <input type="text" name="Q4_Negative_Form" placeholder="Your answer..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <label class="block text-sm font-semibold text-gray-800 mb-1">
+                                4. "We __________________ (listen) to music while our parents __________________ (watch) TV."
+                            </label>
+                            <input type="text" name="Q4_music_tv" placeholder="Ej: were listening / were watching" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
                         </div>
+
                         <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">5. Create your own sentence about Springfield using Past Continuous:</label>
-                            <input type="text" name="Q5_Free_Sentence" placeholder="e.g., Krusty was laughing..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <label class="block text-sm font-semibold text-gray-800 mb-1">
+                                5. "The kids in the class __________________ (shout) when the teacher __________________ (enter) the classroom."
+                            </label>
+                            <input type="text" name="Q5_kids_teacher" placeholder="Ej: were shouting / entered" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-emerald-500 transition">
                         </div>
                     </div>
 
+                    <!-- BOTON DE ENVIO -->
                     <button type="submit" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition cursor-pointer text-center block">
-                        🚀 Enviar Tarea a la Profe
+                        🚀 Enviar Ficha a la Profe Belén
                     </button>
                 </form>
             </div>
