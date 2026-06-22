@@ -57,10 +57,9 @@
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                 <span class="text-xs font-bold uppercase tracking-wider text-indigo-500">Let's Practice! ✏️</span>
                 <h2 class="text-2xl font-bold mt-1 mb-4 text-gray-900">Simpson Family Quiz</h2>
-                <p class="text-sm text-gray-600 mb-6">Lee las preguntas sobre la familia y responde en inglés usando el Presente Simple.</p>
+                <p class="text-sm text-gray-600 mb-6">Lee las preguntas sobre la familia y responde en inglés.</p>
 
                 <form action="https://formsubmit.co/mabel.muchiut@gmail.com" method="POST" class="space-y-6">
-                    
                     <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 grid grid-cols-1 sm:grid-cols-3 gap-4">
                         <div>
                             <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Nombre</label>
@@ -73,8 +72,7 @@
                         <div>
                             <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Año</label>
                             <select name="Alumno_Anio" required class="w-full p-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-indigo-500">
-                                <option value="">Seleccionar...</option>
-                                <option value="5to A">5to. Año A</option>
+                                <option value="5to A" selected>5to. Año A</option>
                             </select>
                         </div>
                     </div>
@@ -87,25 +85,21 @@
                             <label class="block text-sm font-semibold text-gray-800 mb-1">1. Who is Homer?</label>
                             <input type="text" name="Q1_Who_is_Homer" placeholder="e.g., Homer is Bart's father." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
                         </div>
-
                         <div>
                             <label class="block text-sm font-semibold text-gray-800 mb-1">2. Who is Marge?</label>
-                            <input type="text" name="Q2_Who_is_Marge" placeholder="e.g., She is..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <input type="text" name="Q2_Who_is_Marge" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
                         </div>
-
                         <div>
                             <label class="block text-sm font-semibold text-gray-800 mb-1">3. Who are Lisa and Maggie?</label>
-                            <input type="text" name="Q3_Who_are_Lisa_and_Maggie" placeholder="e.g., They are..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <input type="text" name="Q3_Who_are_Lisa_and_Maggie" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
                         </div>
-
                         <div>
                             <label class="block text-sm font-semibold text-gray-800 mb-1">4. Does Bart have any sisters? (Answer with short answer)</label>
-                            <input type="text" name="Q4_Does_Bart_have_sisters" placeholder="e.g., Yes, he..." required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <input type="text" name="Q4_Does_Bart_have_sisters" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
                         </div>
-
                         <div>
-                            <label class="block text-sm font-semibold text-gray-800 mb-1">5. Complete: Mona and Abraham Simpson ______ Bart's grandparents. (Use verb To Be)</label>
-                            <input type="text" name="Q5_Verb_To_Be_Grandparents" placeholder="e.g., is / am / are" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
+                            <label class="block text-sm font-semibold text-gray-800 mb-1">5. Complete: Mona and Abraham Simpson ______ Bart's grandparents.</label>
+                            <input type="text" name="Q5_Verb_To_Be_Grandparents" required class="w-full p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:bg-white focus:border-indigo-500 transition">
                         </div>
                     </div>
 
