@@ -18,7 +18,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-    <div id="splash-screen" class="fixed inset-0 bg-blue-900 flex flex-col justify-center items-center z-50 transition-opacity duration-500">
+    <div id="splash-screen" class="fixed inset-0 bg-blue-600 flex flex-col justify-center items-center z-50 transition-opacity duration-500">
         <div class="text-center p-4 flex flex-col items-center">
             <img src="logo.jpg?v=2" alt="IPEM N°181" class="w-48 h-48 rounded-full aspect-square object-cover animate-bounce-custom border-4 border-white shadow-lg">
             
@@ -29,4 +29,72 @@
                 <p class="text-yellow-300 text-xl font-bold tracking-wide uppercase drop-shadow-sm">
                     5to. Año "A"
                 </p>
-                <p class="text-blue-200 text-lg font-
+                <p class="text-blue-100 text-lg font-medium italic tracking-wider drop-shadow-sm">
+                    Profe Belén
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-indigo-600 text-white shadow-md px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <h1 class="text-xl font-bold tracking-wide text-center sm:text-left">CLASES DE INGLÉS CON LA PROFE BELÉN</h1>
+    </nav>
+
+    <main class="max-w-4xl mx-auto my-8 px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <aside class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 h-fit">
+            <h3 class="font-bold text-lg mb-4 text-gray-700 border-b pb-2 border-gray-100">Alumnos de 5to. Año A</h3>
+            <div class="space-y-3">
+                <a href="index.html" class="w-full text-left p-3 bg-indigo-600 text-white rounded-xl font-medium transition text-center md:text-left block shadow-sm">
+                    🚀 1. ¡Arrancamos con todo!
+                </a>
+                <a href="simpsons.html" class="w-full text-left p-3 bg-gray-100 text-gray-600 hover:bg-amber-50 hover:text-amber-600 rounded-xl font-medium transition text-center md:text-left block border border-transparent">
+                    📝 2. Vemos los integrantes de la family en Ingles!!
+                </a>
+                <a href="pasado-simple-y-continuo.html" class="w-full text-left p-3 bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-700 rounded-xl font-medium transition text-center md:text-left block border border-transparent">
+                    💼 3. Was / Were & Past Continuous
+                </a>
+            </div>
+        </aside>
+
+        <section class="md:col-span-2 space-y-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-500">Welcome Back! 👋</span>
+                <h2 class="text-2xl font-bold mt-1 mb-2 text-gray-900">¡Bienvenidos a un nuevo año!</h2>
+                <p class="text-sm text-gray-600 mb-6">Hola chicos, ¡qué alegría volver a encontrarnos! En este espacio vamos a compartir videos, juegos y desafíos súper divertidos para aprender inglés juntos.</p>
+                
+                <div class="mb-6 overflow-hidden rounded-2xl border border-gray-200 shadow-sm bg-black aspect-video">
+                    <iframe class="w-full h-full" 
+                            src="https://www.youtube.com/embed/3Ujiiu7WISg" 
+                            title="The Simpson Family Video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+                    <h4 class="font-bold text-indigo-800 mb-1 text-sm">💡 ¿Qué tenemos que hacer hoy?</h4>
+                    <p class="text-xs text-indigo-700 leading-relaxed">
+                        Miren con mucha atención el video de Lisa presentando a su familia. Luego, vayan al menú de la izquierda y completen las actividades de repaso hasta llegar a nuestro tema central: <strong>3. Was / Were & Past Continuous</strong>. ¡A trabajar!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const splash = document.getElementById('splash-screen');
+            // Cambiado a 1000 milisegundos (1 segundo exacto de espera)
+            setTimeout(() => {
+                splash.classList.add('opacity-0');
+                setTimeout(() => {
+                    splash.style.display = 'none';
+                }, 500); 
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
